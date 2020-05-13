@@ -22,6 +22,7 @@ public class playerMovement : MonoBehaviour
         // Makes the ship go left and right
         Vector3 playerPosition = transform.position;
         playerPosition.x += Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
+
         transform.position = playerPosition;
     }
 }
