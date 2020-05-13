@@ -1,0 +1,5 @@
+New Branch Test:
+----------------
+Created New Branch so I can work independently and not have to be editing the master branch so I can do my own development/testing
+before pushing to master. Also tested Unity's feature to change project base from windows and mac. From initial testing project
+still seems to be the same with no issues.
