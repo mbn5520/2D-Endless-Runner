@@ -4,18 +4,22 @@ using UnityEngine;
 
 public class Shooting : MonoBehaviour
 {
+    public GameObject bulletPrefab;
 
-    public float maxSpeed = 5f;
+    public float fireDelay = 0.25f;
+    float cooldownTimer = 0f;
 
     void Update()
     {
-        Vector3 pos = transform.position;
+        cooldownTimer -= Time.deltaTime;
 
-        Vector3 velocity = new Vector3(0,maxSpeed * Time.deltaTime , 0);
+        if(Input.GetButton("Fire1") && cooldownTimer <= 0)
+        {
+            Debug.Log("POW!");
+            cooldownTimer =fireDelay;
 
-        //pos += pos * velocity;
-
-        transform.position = pos;
+            Instantiate(bulletPrefab, transform.position, transform.rotation);
+        }
     }
 
 }

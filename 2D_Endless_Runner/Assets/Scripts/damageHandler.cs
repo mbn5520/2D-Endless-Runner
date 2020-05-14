@@ -4,13 +4,21 @@ using UnityEngine;
 
 public class damageHandler : MonoBehaviour
 {
-    int health =1;
+    public int health = 1;
 
-    void OnTriggerEnter2D();
+    public float playerInvul = 0f; 
+
+    void OnTriggerEnter2D()
     {
-        Debug.Log("TRigger!");
+        if(playerInvul <= 0)
         health--;
-        
+        playerInvul = 2f;
+    }
+
+     void Update()
+    {
+        playerInvul -= Time.deltaTime;
+
         if(health <= 0)
         {
             Die();
@@ -19,6 +27,6 @@ public class damageHandler : MonoBehaviour
 
     void Die()
     {
-        Destroy(gameObject);
+        Destroy (gameObject);
     }
 }
