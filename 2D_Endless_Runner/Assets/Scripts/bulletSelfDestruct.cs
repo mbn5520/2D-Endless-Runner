@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class bulletSelfDestruct : MonoBehaviour
 {
-    public float timer = 1f;
+    public float timer = 10f;
 
 
     // Update is called once per frame

@@ -10,7 +10,9 @@ public class AsteroidGenerator : MonoBehaviour
 
     private int randomNumber;
 
-    public float timer = 2f;
+    public float timer = 10f;
+
+    
 
     List<GameObject> prefabList = new List<GameObject>();
     public GameObject asteroid_1;
@@ -23,9 +25,6 @@ public class AsteroidGenerator : MonoBehaviour
     public GameObject asteroid_8;
     public GameObject asteroid_9;
     public GameObject asteroid_10;
-
-
-
 
 
 
