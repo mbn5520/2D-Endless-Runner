@@ -70,6 +70,7 @@
     <Compile Include="Assets\Scripts\cameraController.cs" />
     <Compile Include="Assets\Scripts\cameraFollow.cs" />
     <Compile Include="Assets\Scripts\damageHandler.cs" />
+    <Compile Include="Assets\Scripts\distanceTravelled.cs" />
     <Compile Include="Assets\Scripts\firedShots.cs" />
     <Compile Include="Assets\Scripts\healthBar.cs" />
     <Compile Include="Assets\Scripts\mainMenu.cs" />
