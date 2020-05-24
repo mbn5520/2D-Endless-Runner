@@ -13,10 +13,11 @@ public class cameraController : MonoBehaviour
 {
     public playerMovement thePlayer;
 
+    //Create Background objects to store current y axis position 
     public Transform bg1;
-
     public Transform bg2;
 
+    //Create variable to store size value of background objects
     private float size;
 
 
@@ -47,7 +48,7 @@ public class cameraController : MonoBehaviour
 
         lastPlayerPosition = thePlayer.transform.position;
 
-        //endless Background
+        //Control for the background stacking, change is based on position of player model relative to background position
         if (transform.position.y >= bg2.position.y)
         {
             bg1.position = new Vector3(bg1.position.x, bg2.position.y + size, bg1.position.z);
@@ -55,6 +56,7 @@ public class cameraController : MonoBehaviour
         }
     }
 
+    //Switch background method to switch positional values for stacking
     private void SwitchBg()
     {
         Transform temp = bg1;
