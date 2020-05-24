@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class playerMovement : MonoBehaviour
 {
-    public float moveSpeed = 5f;
+    public float moveSpeed = 6f;
     public float shipSpeed;
 
     private Rigidbody2D playerRigidBody;
@@ -22,6 +22,7 @@ public class playerMovement : MonoBehaviour
         // Makes the ship go left and right
         Vector3 playerPosition = transform.position;
         playerPosition.x += Input.GetAxis("Horizontal") * moveSpeed * Time.deltaTime;
+
         transform.position = playerPosition;
     }
 }
