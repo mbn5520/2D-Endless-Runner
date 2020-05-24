@@ -3,8 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 //using UnityEngine.UI;
 
+/**
+ * 
+ * This script sets the max health for the player. the player health can be edited from the unity editor
+ * This allows us to add more functionality where the player can recieve power ups for health
+ * This script also integrates the data required for the health bar displkayed on the screen
+ * We give the player 2 seconds of inmvulnerability everytime the player is shot just so the player can regain the control over the game and can play longer
+ * 
+ */
+
 public class playerDamageHandler : MonoBehaviour
 {
+    //this piece of code integrates the health bar script that will display the player health bar on the screen
     public healthBar healthBar;
 
     public int maxHealth = 4;
@@ -19,6 +29,8 @@ public class playerDamageHandler : MonoBehaviour
 
     void OnTriggerEnter2D()
     {
+
+        //if the player invulnerability drops below 0, then the player can get hit and lose health
         if (playerInvul <= 0)
         {
             currentHealth--;
@@ -31,6 +43,7 @@ public class playerDamageHandler : MonoBehaviour
     {
         playerInvul -= Time.deltaTime;
 
+        //Thi9s piece of code will constantly check if the player has been dropped to 0. if it has, the player will die and the game object will be deleted from that instance of the game.
         if (currentHealth <= 0)
         {
             playerDie();
