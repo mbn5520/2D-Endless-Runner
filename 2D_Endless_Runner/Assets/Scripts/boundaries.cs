@@ -2,8 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+<<<<<<< Updated upstream
 public class boundaries : MonoBehaviour
 {
+=======
+public class boundaries : MonoBehaviour {
+>>>>>>> Stashed changes
 
     // Update is called once per frame
     void Update()
