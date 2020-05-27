@@ -2,6 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/**
+ * 
+ * This code deletes the Game object after a set amount of time
+ * it achieves that using the Destroy() function.
+ * 
+ * **/
+
 public class bulletSelfDestruct : MonoBehaviour
 {
     public float timer = 10f;
