@@ -37,4 +37,14 @@ public class playerMovement : MonoBehaviour
 
         transform.position = playerPosition;
     }
+
+    float getMoveSpeed()
+    {
+        return this.moveSpeed;
+    }
+
+    void setMoveSpeed(float moveSpeed)
+    {
+        this.moveSpeed = moveSpeed;
+    }
 }
