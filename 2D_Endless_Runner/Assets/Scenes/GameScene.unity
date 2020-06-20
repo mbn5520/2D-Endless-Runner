@@ -1129,6 +1129,8 @@ MonoBehaviour:
     type: 3}
   asteroid_10: {fileID: 291544155839921888, guid: f7aee600caf114bd1998b09400fcac41,
     type: 3}
+  enemy_1: {fileID: 2442932153692359455, guid: 45e850234533b44c3b3b1481cfa485c8, type: 3}
+  enemy_2: {fileID: 2442932153692359455, guid: 45e850234533b44c3b3b1481cfa485c8, type: 3}
 --- !u!4 &1323462343
 Transform:
   m_ObjectHideFlags: 0

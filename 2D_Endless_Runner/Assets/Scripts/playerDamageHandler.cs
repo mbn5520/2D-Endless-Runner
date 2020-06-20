@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 //using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 /**
  * 
@@ -46,7 +47,7 @@ public class playerDamageHandler : MonoBehaviour
         //Thi9s piece of code will constantly check if the player has been dropped to 0. if it has, the player will die and the game object will be deleted from that instance of the game.
         if (currentHealth <= 0)
         {
-            playerDie();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 
