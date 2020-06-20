@@ -6,7 +6,7 @@
           <Node name="2D_Endless_Runner" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="cameraFollow.cs" selected="True" />
+                <Node name="GameOverScreen.cs" selected="True" />
               </Node>
             </Node>
           </Node>
@@ -16,7 +16,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="47d3961f-c0b1-470b-92cc-feecc88f6bdd" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="639153e3-2183-4ab0-9c56-83ee2c115b96" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

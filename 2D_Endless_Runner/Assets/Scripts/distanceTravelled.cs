@@ -44,6 +44,6 @@ public class distanceTravelled : MonoBehaviour
     public void OnGUI()
     {
         
-        GUI.Label(new Rect(0, 0, 100, 100), EXP.ToString());
+       // GUI.Label(new Rect(0, 0, 100, 100), EXP.ToString());
     }
 }
