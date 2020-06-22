@@ -19,10 +19,10 @@ public class damageHandler : MonoBehaviour
 
      void Update()
     {
-        
-
         if(health <= 0)
         {
+
+
             Die();
         }
     }
