@@ -10,18 +10,26 @@ using UnityEngine;
 
 public class damageHandler : MonoBehaviour
 {
-    public int health = 1;
+    public int enemyHealth = 3;
 
     void OnTriggerEnter2D()
     {
-        health--;
+        enemyHealth--;
     }
 
-     void Update()
+    public void OnCollisionEnter(Collision collision)
+    {
+        if(collision.collider.tag == "Asteroid")
+        {
+            Debug.Log("Asteroid...");
+        }
+    }
+
+    void Update()
     {
         
 
-        if(health <= 0)
+        if(enemyHealth <= 0)
         {
             Die();
         }

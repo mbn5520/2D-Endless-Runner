@@ -13,7 +13,7 @@ using UnityEngine;
 
 public class firedShots : MonoBehaviour
 {
-    public float moveSpeed = 20f;
+    public float moveSpeed = -20f;
 
     // Update is called once per frame
     void Update()

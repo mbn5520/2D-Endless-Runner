@@ -41,6 +41,8 @@ public class distanceTravelled : MonoBehaviour
         }
     }
 
+    
+
     public void OnGUI()
     {
         

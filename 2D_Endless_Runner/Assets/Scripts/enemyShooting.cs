@@ -16,15 +16,17 @@ public class enemyShooting : MonoBehaviour
     {
         enemyFireCooldown -= Time.deltaTime;
 
-        if (enemyFireCooldown <=0)
+        if (enemyFireCooldown <= 0)
         {
             enemyFireCooldown = fireDelay;
 
             Vector3 offset = transform.rotation * bulletOffset;
 
-            GameObject bulletGo = (GameObject)Instantiate(enemyBullet, (transform.position + offset), transform.rotation);
+            GameObject bulletGo = (GameObject)Instantiate(enemyBullet, ((transform.position) + offset), transform.rotation);
 
             bulletGo.layer = gameObject.layer;
         }
     }
 }
+
+
