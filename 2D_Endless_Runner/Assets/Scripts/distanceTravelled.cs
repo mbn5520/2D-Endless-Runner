@@ -15,6 +15,8 @@ public class distanceTravelled : MonoBehaviour
 {
     float distance = 0;
 
+    public int score;
+
     public int EXP = 0;
 
     //creates an instance to store the last player position.
@@ -23,6 +25,8 @@ public class distanceTravelled : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        score = 10;
+
         lastPosition = transform.position;
     }
 
@@ -36,7 +40,7 @@ public class distanceTravelled : MonoBehaviour
         //this piece of code gives the user 10 EXP points for every multiple of 10 the player passes.
         if ((int)distance % 10 == 0)
         {
-            EXP += 10;
+            EXP += score;
             OnGUI();
         }
     }

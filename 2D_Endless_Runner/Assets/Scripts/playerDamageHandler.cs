@@ -27,16 +27,18 @@ public class playerDamageHandler : MonoBehaviour
         healthBar.setMaxHealth(maxHealth);
    }
 
-    void OnTriggerEnter2D()
+    void OnTriggerEnter2D(Collider2D other)
     {
-
-        //if the player invulnerability drops below 0, then the player can get hit and lose health
-        if (playerInvul <= 0)
+        if (!other.CompareTag("powerup"))
         {
-            currentHealth--;
-            healthBar.setHealth(currentHealth);
+            //if the player invulnerability drops below 0, then the player can get hit and lose health
+            if (playerInvul <= 0)
+            {
+                currentHealth--;
+                healthBar.setHealth(currentHealth);
+            }
+            playerInvul = 2f;
         }
-        playerInvul = 2f;
     }
 
     void Update()

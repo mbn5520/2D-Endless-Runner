@@ -57,6 +57,8 @@
   <ItemGroup>
      <Compile Include="Assets\CameraTrackBounds.cs" />
      <Compile Include="Assets\Scripts\AsteroidGenerator.cs" />
+     <Compile Include="Assets\Scripts\Power Ups\PowerupManager.cs" />
+     <Compile Include="Assets\Scripts\Power Ups\Powerups.cs" />
      <Compile Include="Assets\Scripts\Power Ups\boost.cs" />
      <Compile Include="Assets\Scripts\Power Ups\doubleXP.cs" />
      <Compile Include="Assets\Scripts\Power Ups\multiShot.cs" />
