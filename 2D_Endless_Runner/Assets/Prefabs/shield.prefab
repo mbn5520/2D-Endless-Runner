@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8499866265685306802}
   - component: {fileID: 8499866265685306957}
   - component: {fileID: 8499866265685306800}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: shield
   m_TagString: powerup
   m_Icon: {fileID: 0}
@@ -98,6 +98,7 @@ MonoBehaviour:
   doubleXP: 0
   shield: 1
   boost: 0
+  gunUpgrade: 0
   powerupDuration: 0
 --- !u!58 &8499866265685306800
 CircleCollider2D:

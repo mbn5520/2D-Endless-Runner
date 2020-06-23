@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 1320381648127908015}
   - component: {fileID: 4361732870645608365}
   - component: {fileID: 8077001740992492142}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: multishot
-  m_TagString: Untagged
+  m_TagString: powerup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

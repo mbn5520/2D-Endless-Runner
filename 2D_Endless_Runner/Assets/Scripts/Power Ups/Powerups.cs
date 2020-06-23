@@ -17,6 +17,13 @@ public class Powerups : MonoBehaviour
     void Start()
     {
         pm = FindObjectOfType<PowerupManager>();
+
+        /*
+        doubleXP = false;
+        shield = false;
+        boost = false;
+        gunUpgrade = false;
+        */
     }
 
     // Update is called once per frame

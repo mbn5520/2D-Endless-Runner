@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 699271426007688648}
   - component: {fileID: 699271426007688651}
   - component: {fileID: 699271426007688650}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: xp
   m_TagString: powerup
   m_Icon: {fileID: 0}
@@ -114,4 +114,5 @@ MonoBehaviour:
   doubleXP: 1
   shield: 0
   boost: 0
+  gunUpgrade: 0
   powerupDuration: 10
