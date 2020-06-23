@@ -7,6 +7,7 @@ public class Powerups : MonoBehaviour
     public bool doubleXP;
     public bool shield;
     public bool boost;
+    public bool gunUpgrade;
 
     public float powerupDuration;
 
@@ -28,7 +29,7 @@ public class Powerups : MonoBehaviour
     {
         if(other.name == "Player")
         {
-            pm.ActivatePowerup(doubleXP, shield, boost, powerupDuration);
+            pm.ActivatePowerup(doubleXP, shield, boost, gunUpgrade, powerupDuration);
         }
         gameObject.SetActive(false);
     }

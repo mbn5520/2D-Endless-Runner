@@ -4,20 +4,26 @@ using UnityEngine;
 
 public class PowerupManager : MonoBehaviour
 {
+    // adds a 2x multiplier onthe XP
     private bool doubleXP;
+    // adds extra health to player
     private bool shield;
+    // doubles side to side movemetn speed
     private bool boost;
+    // change colour of bullet
+    private bool gunUpgrade;
+
+    private string powerup;
 
     private bool powerupActive;
-
     private float powerupDurationCounter;
 
     private distanceTravelled dt;
     private playerDamageHandler dh;
     private playerMovement pm;
+    private Shooting shooting;
 
     private int points;
-    private int health;
     private float movement;
 
     // Start is called before the first frame update
@@ -28,6 +34,7 @@ public class PowerupManager : MonoBehaviour
         dt = FindObjectOfType<distanceTravelled>();
         dh = FindObjectOfType<playerDamageHandler>();
         pm = FindObjectOfType<playerMovement>();
+        shooting = FindObjectOfType<Shooting>();
     }
 
     // Update is called once per frame
@@ -39,21 +46,32 @@ public class PowerupManager : MonoBehaviour
 
             if(doubleXP)
             {
+                powerup = "Double XP";
+
                 dt.score = points * 2;
             }
             if(shield)
             {
+                powerup = "Extra Health";
+
                 dh.currentHealth = dh.maxHealth * 2;
             }
             if(boost)
             {
+                powerup = "Speed Boost";
+
                 pm.moveSpeed = movement * 2;
             }
+            if(gunUpgrade)
+            {
+                //shooting.currentPrefab = shooting.upgradedPrefab;
+            }
 
-            if(powerupDurationCounter <= 0)
+            GUI.Label(new Rect(0, 20, 100, 100), powerup);
+
+            if (powerupDurationCounter <= 0)
             {
                 dt.score = points;
-                dh.currentHealth = health;
                 pm.moveSpeed = movement;
 
                 powerupActive = false;
@@ -61,16 +79,16 @@ public class PowerupManager : MonoBehaviour
         }
     }
 
-    public void ActivatePowerup(bool xp, bool s, bool speed, float time)
+    public void ActivatePowerup(bool xp, bool s, bool speed, bool bullet, float time)
     {
         doubleXP = xp;
         shield = s;
         boost = speed;
+        gunUpgrade = bullet;
 
         powerupDurationCounter = time;
 
         points = dt.score;
-        health = dh.maxHealth;
         movement = pm.moveSpeed;
 
         powerupActive = true;

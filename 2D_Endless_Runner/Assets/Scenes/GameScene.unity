@@ -1003,6 +1003,7 @@ MonoBehaviour:
   doubleXP: {fileID: 699271426007688645, guid: d93b19df49b0cc54d9c703c818c8cefa, type: 3}
   shield: {fileID: 8499866265685306956, guid: 712f47afcbf556543b7c148d3c9cf219, type: 3}
   boost: {fileID: 7248887692565333334, guid: 1d2a0f27e279dca44a436aa182831137, type: 3}
+  gunUpgrade: {fileID: 0}
 --- !u!4 &1042894228
 Transform:
   m_ObjectHideFlags: 0

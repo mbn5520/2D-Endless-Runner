@@ -16,6 +16,7 @@ public class PowerupGenerator : MonoBehaviour
     public GameObject doubleXP;
     public GameObject shield;
     public GameObject boost;
+    public GameObject gunUpgrade;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class PowerupGenerator : MonoBehaviour
         powerups.Add(doubleXP);
         powerups.Add(shield);
         powerups.Add(boost);
+        powerups.Add(gunUpgrade);
     }
 
     // Update is called once per frame
@@ -46,7 +48,7 @@ public class PowerupGenerator : MonoBehaviour
 
             if (timer <= 0)
             {
-                int prefabIndex = UnityEngine.Random.Range(0, 3);
+                int prefabIndex = UnityEngine.Random.Range(0, 4);
                 Instantiate(powerups[prefabIndex], transform.position, transform.rotation);
                 timer = 1f;
             }
