@@ -34,10 +34,6 @@ public class AsteroidGenerator : MonoBehaviour
     public GameObject asteroid_9;
     public GameObject asteroid_10;
 
-
-
-
-
     // Start is called before the first frame update
     void Start()
     {

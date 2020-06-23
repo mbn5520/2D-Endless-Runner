@@ -48,7 +48,7 @@ public class PowerupGenerator : MonoBehaviour
             {
                 int prefabIndex = UnityEngine.Random.Range(0, 3);
                 Instantiate(powerups[prefabIndex], transform.position, transform.rotation);
-                timer = .2f;
+                timer = 1f;
             }
         }
     }

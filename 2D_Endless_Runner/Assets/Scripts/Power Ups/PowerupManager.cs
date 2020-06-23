@@ -40,7 +40,6 @@ public class PowerupManager : MonoBehaviour
             if(doubleXP)
             {
                 dt.score = points * 2;
-
             }
             if(shield)
             {
