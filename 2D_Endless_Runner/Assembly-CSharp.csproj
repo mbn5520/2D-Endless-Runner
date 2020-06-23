@@ -64,6 +64,7 @@
      <Compile Include="Assets\Scripts\Power Ups\multiShot.cs" />
      <Compile Include="Assets\Scripts\Power Ups\shield.cs" />
      <Compile Include="Assets\Scripts\Power Ups\slowEnemies.cs" />
+     <Compile Include="Assets\Scripts\PowerupGenerator.cs" />
      <Compile Include="Assets\Scripts\Shooting.cs" />
      <Compile Include="Assets\Scripts\boundaries.cs" />
      <Compile Include="Assets\Scripts\bulletSelfDestruct.cs" />

@@ -97,6 +97,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doubleXP: 0
   shield: 1
+  boost: 0
   powerupDuration: 0
 --- !u!58 &8499866265685306800
 CircleCollider2D:
@@ -113,4 +114,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.32
+  m_Radius: 0.26

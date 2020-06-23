@@ -71,7 +71,7 @@ public class PowerupManager : MonoBehaviour
         powerupDurationCounter = time;
 
         points = dt.score;
-        health = dh.currentHealth;
+        health = dh.maxHealth;
         movement = pm.moveSpeed;
 
         powerupActive = true;
