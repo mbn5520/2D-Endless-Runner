@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 1234715608940396904}
   - component: {fileID: 1234715608940396917}
   - component: {fileID: -1984718824823248636}
-  m_Layer: 9
-  m_Name: beams_18
+  m_Layer: 10
+  m_Name: beams_19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -146,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e795717a05b472bae4755fe009ebe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 3
+  enemyHealth: 1
 --- !u!114 &1234715608940396917
 MonoBehaviour:
   m_ObjectHideFlags: 0

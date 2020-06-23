@@ -12,20 +12,31 @@ public class enemyShooting : MonoBehaviour
 
     float enemyFireCooldown = 0;
 
+    public Renderer enemyRenderer;
+
+    private void Start()
+    {
+        enemyRenderer = GetComponent<Renderer>();
+    }
+
     private void Update()
     {
         enemyFireCooldown -= Time.deltaTime;
 
-        if (enemyFireCooldown <= 0)
-        {
-            enemyFireCooldown = fireDelay;
+        //if(enemyRenderer.isVisible)
+        //{
+            if (enemyFireCooldown <= 0)
+            {
+                enemyFireCooldown = fireDelay;
 
-            Vector3 offset = transform.rotation * bulletOffset;
+                Vector3 offset = transform.rotation * bulletOffset;
 
-            GameObject bulletGo = (GameObject)Instantiate(enemyBullet, ((transform.position) + offset), transform.rotation);
+                GameObject bulletGo = (GameObject)Instantiate(enemyBullet, ((transform.position) + offset), transform.rotation);
 
-            bulletGo.layer = gameObject.layer;
+                bulletGo.layer = gameObject.layer;
         }
+
+        //}
     }
 }
 

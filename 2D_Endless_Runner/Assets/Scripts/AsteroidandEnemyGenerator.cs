@@ -37,6 +37,15 @@ public class AsteroidandEnemyGenerator : MonoBehaviour
     //We can add more as soon as we get more sprites.
     public GameObject enemy_1;
     public GameObject enemy_2;
+    public GameObject enemy_3;
+    public GameObject enemy_4;
+    public GameObject enemy_5;
+    public GameObject enemy_6;
+    public GameObject enemy_7;
+    public GameObject enemy_8;
+    public GameObject enemy_9;
+    public GameObject enemy_10;
+  
 
 
 
@@ -59,6 +68,17 @@ public class AsteroidandEnemyGenerator : MonoBehaviour
         //Same as above, we can add more enemies and the script below will take care of everything
         prefabList.Add(enemy_1);
         prefabList.Add(enemy_2);
+
+        prefabList.Add(enemy_3);
+
+        prefabList.Add(enemy_4);
+        prefabList.Add(enemy_5);
+        prefabList.Add(enemy_6);
+        prefabList.Add(enemy_7);
+        prefabList.Add(enemy_8);
+        prefabList.Add(enemy_9);
+        prefabList.Add(enemy_10);
+    
     }
 
     // Update is called once per frame
@@ -81,7 +101,7 @@ public class AsteroidandEnemyGenerator : MonoBehaviour
 
             if(timer <= 0)
             {
-                int prefabIndex = UnityEngine.Random.Range(0,11);
+                int prefabIndex = UnityEngine.Random.Range(0,19);
                 Instantiate(prefabList[prefabIndex], transform.position, transform.rotation);
                 timer = .2f;
             }

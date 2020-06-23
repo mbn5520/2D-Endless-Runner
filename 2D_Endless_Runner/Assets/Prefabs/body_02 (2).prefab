@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5935095581806213249}
   - component: {fileID: 5935095581806213248}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: GameObject
   m_TagString: Asteroid
   m_Icon: {fileID: 0}
@@ -47,6 +47,7 @@ MonoBehaviour:
   enemyBullet: {fileID: 1234715608940396911, guid: 52d0748a5dbba412eb2cfbba2504611f,
     type: 3}
   fireDelay: 0.2
+  enemyRenderer: {fileID: 0}
 --- !u!1 &8339180132280325236
 GameObject:
   m_ObjectHideFlags: 0
@@ -62,7 +63,8 @@ GameObject:
   - component: {fileID: 8339180132280325235}
   - component: {fileID: 8339180132280325246}
   - component: {fileID: 8339180132280325245}
-  m_Layer: 11
+  - component: {fileID: 3560199669930599273}
+  m_Layer: 10
   m_Name: body_02 (2)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -193,7 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e795717a05b472bae4755fe009ebe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 3
+  enemyHealth: 10
 --- !u!114 &8339180132280325246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,12 +218,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8339180132280325236}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7e71c6276e00c4a8ea05beeed1f3049e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletOffset: {x: 0, y: 2, z: 0}
+  bulletOffset: {x: 0, y: 4, z: 0}
   enemyBullet: {fileID: 1234715608940396911, guid: 52d0748a5dbba412eb2cfbba2504611f,
     type: 3}
   fireDelay: 0.2
+  enemyRenderer: {fileID: 0}
+--- !u!114 &3560199669930599273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8339180132280325236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aef681f94492744eaa7ce99443252baa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timer: 10
