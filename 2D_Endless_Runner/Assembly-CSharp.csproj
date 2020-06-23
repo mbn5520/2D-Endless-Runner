@@ -67,10 +67,15 @@
     <Compile Include="Assets\Scripts\AsteroidandEnemyGenerator.cs" />
     <Compile Include="Assets\Scripts\CameraTrackBounds.cs" />
     <Compile Include="Assets\Scripts\GameOverScreen.cs" />
+    <Compile Include="Assets\Scripts\PowerupGenerator.cs" />
+    <Compile Include="Assets\Scripts\PowerupManager.cs" />
+    <Compile Include="Assets\Scripts\Powerups.cs" />
+    <Compile Include="Assets\Scripts\Score.cs" />
     <Compile Include="Assets\Scripts\bulletSelfDestruct.cs" />
     <Compile Include="Assets\Scripts\cameraController.cs" />
     <Compile Include="Assets\Scripts\cameraFollow.cs" />
     <Compile Include="Assets\Scripts\damageHandler.cs" />
+    <Compile Include="Assets\Scripts\displayPowerup.cs" />
     <Compile Include="Assets\Scripts\distanceTravelled.cs" />
     <Compile Include="Assets\Scripts\enemyMovement.cs" />
     <Compile Include="Assets\Scripts\enemyShooting.cs" />

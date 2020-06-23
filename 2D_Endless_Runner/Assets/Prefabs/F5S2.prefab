@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4761725288109984544}
   - component: {fileID: 4761725288109984545}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: Enemy Fire Point
   m_TagString: Asteroid
   m_Icon: {fileID: 0}
@@ -65,7 +65,7 @@ GameObject:
   - component: {fileID: 7201821169783580636}
   - component: {fileID: 1424678692928414564}
   - component: {fileID: 6575531944053242379}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: F5S2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -196,7 +196,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e795717a05b472bae4755fe009ebe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 10
+  enemyHealth: 3
 --- !u!114 &7201821169783580639
 MonoBehaviour:
   m_ObjectHideFlags: 0

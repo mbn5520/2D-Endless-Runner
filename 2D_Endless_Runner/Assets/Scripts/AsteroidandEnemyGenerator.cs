@@ -45,6 +45,12 @@ public class AsteroidandEnemyGenerator : MonoBehaviour
     public GameObject enemy_8;
     public GameObject enemy_9;
     public GameObject enemy_10;
+
+    public GameObject powerup_1;
+    public GameObject powerup_2;
+    public GameObject powerup_3;
+    public GameObject powerup_4;
+
   
 
 
@@ -78,6 +84,11 @@ public class AsteroidandEnemyGenerator : MonoBehaviour
         prefabList.Add(enemy_8);
         prefabList.Add(enemy_9);
         prefabList.Add(enemy_10);
+
+        prefabList.Add(powerup_1);
+        prefabList.Add(powerup_2);
+        prefabList.Add(powerup_3);
+        prefabList.Add(powerup_4);
     
     }
 
@@ -101,9 +112,11 @@ public class AsteroidandEnemyGenerator : MonoBehaviour
 
             if(timer <= 0)
             {
-                int prefabIndex = UnityEngine.Random.Range(0,19);
+                int prefabIndex = UnityEngine.Random.Range(0,23);
                 Instantiate(prefabList[prefabIndex], transform.position, transform.rotation);
-                timer = .2f;
+
+                
+                timer = .8f;
             }
         }
     }

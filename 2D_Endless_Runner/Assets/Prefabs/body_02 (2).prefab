@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5935095581806213249}
   - component: {fileID: 5935095581806213248}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: GameObject
   m_TagString: Asteroid
   m_Icon: {fileID: 0}
@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 8339180132280325246}
   - component: {fileID: 8339180132280325245}
   - component: {fileID: 3560199669930599273}
-  m_Layer: 10
+  m_Layer: 11
   m_Name: body_02 (2)
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -195,7 +195,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4e795717a05b472bae4755fe009ebe1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 10
+  enemyHealth: 3
 --- !u!114 &8339180132280325246
 MonoBehaviour:
   m_ObjectHideFlags: 0
