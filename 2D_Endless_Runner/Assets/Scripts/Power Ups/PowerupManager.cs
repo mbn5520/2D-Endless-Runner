@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PowerupManager : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class PowerupManager : MonoBehaviour
     private bool gunUpgrade;
 
     private string powerup;
+
+    public TextMeshPro textMeshPro;
 
     private bool powerupActive;
     private float powerupDurationCounter;
@@ -35,6 +38,8 @@ public class PowerupManager : MonoBehaviour
         dh = FindObjectOfType<playerDamageHandler>();
         pm = FindObjectOfType<playerMovement>();
         shooting = FindObjectOfType<Shooting>();
+
+        textMeshPro = GetComponent<TextMeshPro>();
     }
 
     // Update is called once per frame
@@ -46,19 +51,19 @@ public class PowerupManager : MonoBehaviour
 
             if(doubleXP)
             {
-                powerup = "Double XP";
+                textMeshPro.SetText("Double XP");
 
                 dt.score = points * 2;
             }
             if(shield)
             {
-                powerup = "Extra Health";
+                textMeshPro.SetText("Shield");
 
                 dh.currentHealth = dh.maxHealth * 2;
             }
             if(boost)
             {
-                powerup = "Speed Boost";
+                textMeshPro.SetText("Boost");
 
                 pm.moveSpeed = movement * 2;
             }
@@ -66,8 +71,6 @@ public class PowerupManager : MonoBehaviour
             {
                 //shooting.currentPrefab = shooting.upgradedPrefab;
             }
-
-            GUI.Label(new Rect(0, 20, 100, 100), powerup);
 
             if (powerupDurationCounter <= 0)
             {

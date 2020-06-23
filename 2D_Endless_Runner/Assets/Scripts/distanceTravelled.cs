@@ -41,14 +41,14 @@ public class distanceTravelled : MonoBehaviour
         if ((int)distance % 10 == 0)
         {
             EXP += score;
-            OnGUI();
+            //OnGUI();
         }
     }
-    
+    /*
     public void OnGUI()
     {
         
         GUI.Label(new Rect(0, 0, 100, 100), EXP.ToString());
     }
-    
+    */
 }
