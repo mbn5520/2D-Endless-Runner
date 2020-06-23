@@ -44,10 +44,11 @@ public class distanceTravelled : MonoBehaviour
             OnGUI();
         }
     }
-
+    
     public void OnGUI()
     {
         
         GUI.Label(new Rect(0, 0, 100, 100), EXP.ToString());
     }
+    
 }
