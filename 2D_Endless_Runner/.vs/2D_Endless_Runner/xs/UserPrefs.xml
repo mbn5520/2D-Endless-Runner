@@ -1,5 +1,5 @@
 ﻿<Properties StartupConfiguration="{DD1F8886-6F18-D6F0-7F5E-FD8D86F34502}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PowerupManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AsteroidandEnemyGenerator.cs">
     <Files>
       <File FileName="Assets/Scripts/damageHandler.cs" Line="13" Column="1" />
       <File FileName="Assets/Scripts/distanceTravelled.cs" />
@@ -7,9 +7,10 @@
       <File FileName="Assets/Scripts/firedShots.cs" />
       <File FileName="Assets/Scripts/playerDamageHandler.cs" />
       <File FileName="Assets/Scenes/GameScene.unity" />
-      <File FileName="Assets/Scripts/PowerupManager.cs" Line="6" Column="44" />
+      <File FileName="Assets/Scripts/PowerupManager.cs" Line="24" Column="31" />
       <File FileName="Assets/Scripts/PowerupGenerator.cs" Line="53" Column="27" />
-      <File FileName="Assets/Scripts/AsteroidandEnemyGenerator.cs" Line="118" Column="17" />
+      <File FileName="Assets/Scripts/AsteroidandEnemyGenerator.cs" Line="122" Column="1" />
+      <File FileName="Assets/Scripts/enemyShooting.cs" Line="1" Column="1" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
